@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   background: linear-gradient();
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.id-card {
+    width: 340px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+    position: relative;
+}
+
+.card-header {
+    background: linear-gradient(180deg, #08284a, #0a3a65);
+    padding: 28px 0 100px;
+    text-align: center;
+    color: white;
+}
+
+.card-header p {
+    color: #dbeafe;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+}
+
+.photo-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 140px;
+    width: 140px;
+    top:140px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 2;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.card-body {
+    padding: 90px 24px 20px;
+    text-align: center;
+}
+
+.student-name {
+    margin-bottom: 6px;
+    color: #0b2742;
+    font-weight: bold;
+}
+
+.college {
+    color: #334155;
+    font-size: 14px;
+}
+
+.divider {
+    margin: 18px auto;
+    width: 85%;
+    border-top: 1px solid #e6e9ee;
+}
+
+.details p {
+    color: #344154;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.id-line {
+    display: inline-block;
+    background: #07294b;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.id-label {
+    margin-right: 6px;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.barcode {
+    margin: 18px auto 8px;
+    width: 60%;
+    height: 32px;
+    background-image: repeating-linear-gradient(90deg, #0b2742 0 4px, #fff 4px 8px);
+}
+
+.card-footer {
+    background: #f9fafb;
+    padding: 10px 18px;
+    text-align: center;
+    border-top: 1px solid #e6e9ee;
+}
+
+.footer-text {
+    color: #64748b;
+    font-size: 11px;
+}
+
+@media (max-width:400px) {
+    .id-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .student-name {
+        font-size: 21px;
+    }
+}
